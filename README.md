@@ -11,10 +11,12 @@ run timescale on top of PostgreSql
 insert data into timescale 
 
 ```bash
-go get github.com/aniljaiswalcs/timescale
+clone the repo
 
-go build 
+go build -o selectbenchmark  
+
 ./selectbenchmark -workerThread 10 -file query_params
+
 go test -v
 ```
 Testing:
